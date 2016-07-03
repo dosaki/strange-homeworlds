@@ -1,5 +1,5 @@
 name="Strange Homeworlds"
-path="mod/homeworlds_unlimited"
+path="mod/strange_homeworlds"
 tags={
 	"Gameplay"
 	"Overhaul"

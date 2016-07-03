@@ -1,6 +1,6 @@
-# What is Homeworlds Unlimited©
+# What is Strange Homeworlds
 
-Homeworlds Unlimited© is an addon to the mod [Colonize Unlimited©](https://steamcommunity.com/sharedfiles/filedetails/?id=682582076) and is designed to let you start with previously uninhabitable planets!
+Strange Homeworlds is an addon to the mod [Colonize Unlimited©](https://steamcommunity.com/sharedfiles/filedetails/?id=682582076) and is designed to let you start with previously uninhabitable planets!
 
 Get it on Steam Workshop:
 
@@ -12,6 +12,9 @@ Ability to start out with the following world types:
 * Barren Cold
 * Frozen
 * Gas Giant
+
+# Habitability Relationships
+![Habitability Relationships](https://github.com/dosaki/strange-homeworlds/blob/master/habitability_links.png)
 
 # Incompatibilities
 Anything that changes the following:
