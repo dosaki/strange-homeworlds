@@ -23,7 +23,7 @@ Anything that changes the following:
 
 # Currently known bugs
 Please report bugs on:
-* Steam Workshop:
-* Github:
+* Steam Workshop: http://steamcommunity.com/sharedfiles/filedetails/discussions/716723174
+* Github: https://github.com/dosaki/strange-homeworlds/issues
 
 Enjoy!
