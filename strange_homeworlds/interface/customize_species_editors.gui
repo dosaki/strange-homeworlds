@@ -13,7 +13,8 @@
 @arctic_x = 537
 @ocean_x = 486
 @gas_giant_x = 448
-@toxic_x = 350
+@toxic_x = 340
+@nuked_x = 410
 
 @continental_y = 10
 @tropical_y = 32
@@ -28,6 +29,7 @@
 @ocean_y = 32
 @gas_giant_y = 92
 @toxic_y = 170
+@nuked_y = 170
 
 guiTypes = {
 	containerWindowType = {
@@ -1466,6 +1468,14 @@ guiTypes = {
 			buttonType = {
 				name = "pc_toxic"
 				position = { x = @toxic_x y = @toxic_y }
+				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_nuked"
+				position = { x = @nuked_x y = @nuked_y }
 				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"
