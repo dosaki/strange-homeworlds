@@ -4,4 +4,5 @@ tags={
 	"Fixes"
 }
 picture="sh_cc.jpg"
+remote_file_id="717639819"
 supported_version="1.2.*"
