@@ -6,4 +6,5 @@ tags={
 	"Gameplay"
 	"Fixes"
 }
-supported_version="1.2.5"
+remote_file_id="756813222"
+supported_version="1.2.*"
