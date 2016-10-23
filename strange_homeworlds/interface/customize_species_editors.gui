@@ -1344,19 +1344,19 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "3d_icons"
-			size = { width = 100 height = 100 }
+			size = { width = 60 height = 60 }
 			position = { x = 40 y = 0 }
 
 
-			@planet_row0 = 10
-			@planet_row1 = 47
-			@planet_row2 = 147
-			@planet_row3 = 247
+			@planet_row0 = 5
+			@planet_row1 = 67
+			@planet_row2 = 132
+			@planet_row3 = 197
 			@planet_col1 = 294
 			@planet_col2 = 369
 			@planet_col3 = 444
 			@planet_col4 = 519
-			@planet_col5 = 694
+			@planet_col5 = 594
 			@planet_text_max_width = 60
 			@planet_text_max_height = 20
 			@planet_preference_size = 60
@@ -1423,17 +1423,18 @@ guiTypes = {
 
 
 			@planet_type_container_width = 72
-			@planet_type_container_height = 318
-			@container_pos_width1 = 290
-			@container_pos_width2 = 365
-			@container_pos_width3 = 440
-			@container_pos_width4 = 515
-			@container_pos_width5 = 590
+			@planet_type_container_height = 205
+			@container_pos_x1 = 290
+			@container_pos_x2 = 365
+			@container_pos_x3 = 440
+			@container_pos_x4 = 515
+			@container_pos_x5 = 590
+			@container_pos_y = 59
 
 			containerWindowType = {
 				name = "setting_bg_box1"
 				size = { width = @planet_type_container_width height = @planet_type_container_height }
-				position = { x = @container_pos_width1 y = 39 }
+				position = { x = @container_pos_x1 y = @container_pos_y }
 
 					background = {
 						name = "setting_bg_frame"
@@ -1444,7 +1445,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "setting_bg_box2"
 				size = { width = @planet_type_container_width height = @planet_type_container_height }
-				position = { x = @container_pos_width2 y = 39 }
+				position = { x = @container_pos_x2 y = @container_pos_y }
 
 					background = {
 						name = "setting_bg_frame"
@@ -1455,7 +1456,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "setting_bg_box3"
 				size = { width = @planet_type_container_width height = @planet_type_container_height }
-				position = { x = @container_pos_width3 y = 39 }
+				position = { x = @container_pos_x3 y = @container_pos_y }
 
 					background = {
 						name = "setting_bg_frame"
@@ -1466,7 +1467,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "setting_bg_box4"
 				size = { width = @planet_type_container_width height = @planet_type_container_height }
-				position = { x = @container_pos_width4 y = 39 }
+				position = { x = @container_pos_x4 y = @container_pos_y }
 
 					background = {
 						name = "setting_bg_frame"
@@ -1477,7 +1478,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "setting_bg_box5"
 				size = { width = @planet_type_container_width height = @planet_type_container_height }
-				position = { x = @container_pos_width5 y = 39 }
+				position = { x = @container_pos_x5 y = @container_pos_y }
 
 					background = {
 						name = "setting_bg_frame"
