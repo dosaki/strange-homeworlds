@@ -1352,6 +1352,7 @@ guiTypes = {
 			@planet_row1 = 67
 			@planet_row2 = 132
 			@planet_row3 = 197
+			@horizontal_level = 215
 			@planet_col1 = 294
 			@planet_col2 = 369
 			@planet_col3 = 444
@@ -1421,15 +1422,31 @@ guiTypes = {
 				format = center
 			}
 
+			instantTextBoxType = {
+				name = "TYPE_HEADER_06"
+				font = "malgun_goth_24"
+				text = "climate_gas"
+				position = { x = @planet_col1 y = @horizontal_level }
+				maxWidth = @planet_text_max_width
+				maxHeight = @planet_text_max_height
+				Orientation = "UPPER_LEFT"
+				text_color_code = "E"
+				format = center
+			}
+
 
 			@planet_type_container_width = 72
 			@planet_type_container_height = 205
+			@planet_type_container_horizontal_width = 662
+			@planet_type_container_horizontal_height = 72
 			@container_pos_x1 = 290
 			@container_pos_x2 = 365
 			@container_pos_x3 = 440
 			@container_pos_x4 = 515
 			@container_pos_x5 = 590
+			@container_pos_x6 = 290
 			@container_pos_y = 59
+			@container_pos_y6 = 274
 
 			containerWindowType = {
 				name = "setting_bg_box1"
@@ -1479,6 +1496,17 @@ guiTypes = {
 				name = "setting_bg_box5"
 				size = { width = @planet_type_container_width height = @planet_type_container_height }
 				position = { x = @container_pos_x5 y = @container_pos_y }
+
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_clean_frame_area"
+					}
+			}
+
+			containerWindowType = {
+				name = "setting_bg_box6"
+				size = { width = @planet_type_container_horizontal_width height = @planet_type_container_horizontal_height }
+				position = { x = @container_pos_x6 y = @container_pos_y6 }
 
 					background = {
 						name = "setting_bg_frame"
@@ -1601,6 +1629,14 @@ guiTypes = {
 			buttonType = {
 				name = "pc_barren"
 				position = { x = @planet_col5 y = @planet_row3 }
+				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_gas_giant"
+				position = { x = @planet_col2 y = @horizontal_level }
 				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"
