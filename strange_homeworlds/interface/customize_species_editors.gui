@@ -1346,13 +1346,14 @@ guiTypes = {
 			name = "3d_icons"
 			size = { width = 60 height = 60 }
 			position = { x = 40 y = 0 }
-
+C:\Users\lordg\Documents\Paradox Interactive\mods\strange-homeworlds\strange_homeworlds\interface\customize_species_editors.gui
 
 			@planet_row0 = 5
 			@planet_row1 = 67
 			@planet_row2 = 132
 			@planet_row3 = 197
-			@horizontal_level = 215
+			@horizontal_level = 278
+			@horizontal_level_text = 293
 			@planet_col1 = 294
 			@planet_col2 = 369
 			@planet_col3 = 444
@@ -1360,6 +1361,7 @@ guiTypes = {
 			@planet_col5 = 594
 			@planet_text_max_width = 60
 			@planet_text_max_height = 20
+			@planet_text_max_width_horizontal = 65
 			@planet_preference_size = 60
 
 			instantTextBoxType = {
@@ -1426,8 +1428,8 @@ guiTypes = {
 				name = "TYPE_HEADER_06"
 				font = "malgun_goth_24"
 				text = "climate_gas"
-				position = { x = @planet_col1 y = @horizontal_level }
-				maxWidth = @planet_text_max_width
+				position = { x = @planet_col1 y = @horizontal_level_text }
+				maxWidth = @planet_text_max_width_horizontal
 				maxHeight = @planet_text_max_height
 				Orientation = "UPPER_LEFT"
 				text_color_code = "E"
@@ -1437,14 +1439,14 @@ guiTypes = {
 
 			@planet_type_container_width = 72
 			@planet_type_container_height = 205
-			@planet_type_container_horizontal_width = 662
+			@planet_type_container_horizontal_width = 72
 			@planet_type_container_horizontal_height = 72
 			@container_pos_x1 = 290
 			@container_pos_x2 = 365
 			@container_pos_x3 = 440
 			@container_pos_x4 = 515
 			@container_pos_x5 = 590
-			@container_pos_x6 = 290
+			@container_pos_x6 = 365
 			@container_pos_y = 59
 			@container_pos_y6 = 274
 
