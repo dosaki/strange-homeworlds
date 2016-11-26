@@ -1,35 +1,4 @@
 @movable_editors = no
-@planet_preference_size = 70
-
-@continental_x = 410
-@tropical_x = 334
-@desert_x = 283
-@molten_x = 271
-@arid_x = 304
-@barren_x = 371
-@barren_cold_x = 449
-@tundra_x = 516
-@frozen_x = 549
-@arctic_x = 537
-@ocean_x = 486
-@gas_giant_x = 448
-@toxic_x = 340
-@nuked_x = 410
-
-@continental_y = 10
-@tropical_y = 32
-@desert_y = 92
-@molten_y = 170
-@arid_y = 242
-@barren_y = 284
-@barren_cold_y = 284
-@tundra_y = 242
-@frozen_y = 170
-@arctic_y = 92
-@ocean_y = 32
-@gas_giant_y = 92
-@toxic_y = 170
-@nuked_y = 170
 
 guiTypes = {
 	containerWindowType = {
@@ -343,12 +312,12 @@ guiTypes = {
 			maxWidth = 400
 			text =	 "BIOGRAPHY"
 			alwaysTransparent = yes
-		}			
+		}
 		containerWindowType = {
 			name = "black_background_box_01"
 			size = { width = 295 height = 300 }
 			position = { x = 400 y = 35 }
-			
+
 			background = {
 				name = "black"
 				spriteType = "GFX_tiles_dark_area_cut_8"
@@ -650,7 +619,7 @@ guiTypes = {
 				font = "malgun_goth_24"
 				position = { x = 10 y = 5 }
 				maxWidth = 230
-				text =	 ""
+				text =	 "Resilient"
 				format = left
 				alwaysTransparent = yes
 				#text_color_code = "E"
@@ -661,7 +630,7 @@ guiTypes = {
 				font = "cg_16b"
 				position = { x = 10 y = 40 }
 				maxWidth = 395
-				text = ""
+				text =	 "Text describing the trait you have currently chosen. Lorem ipsum dolar sit amet, Lorem ipsum dolar sit amet, Lorem ipsum dolar sit amet, Lorem ipsum dolar sit amet"
 				format = left
 				#alwaysTransparent = yes
 				text_color_code = "L"
@@ -672,7 +641,7 @@ guiTypes = {
 				font = "cg_16b"
 				position = { x = 10 y = 100 }
 				maxWidth = 395
-				text =	 ""
+				text =	 "+10% to Planet Habitability"
 				format = left
 				#alwaysTransparent = yes
 			}
@@ -1362,15 +1331,182 @@ guiTypes = {
 			}
 		}
 
-		# Homeworld Type chooser
 		containerWindowType = {
 			name = "3d_icons"
-			size = { width = 100 height = 100 }
+			size = { width = 60 height = 60 }
 			position = { x = 40 y = 0 }
 
+			@planet_row0 = 5
+			@planet_row1 = 67
+			@planet_row2 = 132
+			@planet_row3 = 197
+			@horizontal_level = 278
+			@horizontal_level_text = 293
+			@planet_col1 = 294
+			@planet_col2 = 369
+			@planet_col3 = 444
+			@planet_col4 = 519
+			@planet_col5 = 594
+			@planet_text_max_width = 60
+			@planet_text_max_height = 20
+			@planet_text_max_width_horizontal = 65
+			@planet_preference_size = 60
+
+			instantTextBoxType = {
+				name = "TYPE_HEADER_01"
+				font = "malgun_goth_24"
+				text = "climate_dry"
+				position = { x = @planet_col1 y = @planet_row0 }
+				maxWidth = @planet_text_max_width
+				maxHeight = @planet_text_max_height
+				Orientation = "UPPER_LEFT"
+				text_color_code = "E"
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "TYPE_HEADER_02"
+				font = "malgun_goth_24"
+				text = "climate_wet"
+				position = { x = @planet_col2 y = @planet_row0 }
+				maxWidth = @planet_text_max_width
+				maxHeight = @planet_text_max_height
+				Orientation = "UPPER_LEFT"
+				text_color_code = "E"
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "TYPE_HEADER_03"
+				font = "malgun_goth_24"
+				text = "climate_cold"
+				position = { x = @planet_col3 y = @planet_row0 }
+				maxWidth = @planet_text_max_width
+				maxHeight = @planet_text_max_height
+				Orientation = "UPPER_LEFT"
+				text_color_code = "E"
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "TYPE_HEADER_04"
+				font = "malgun_goth_24"
+				text = "climate_harsh"
+				position = { x = @planet_col4 y = @planet_row0 }
+				maxWidth = @planet_text_max_width
+				maxHeight = @planet_text_max_height
+				Orientation = "UPPER_LEFT"
+				text_color_code = "E"
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "TYPE_HEADER_05"
+				font = "malgun_goth_24"
+				text = "climate_inhospitable"
+				position = { x = @planet_col5 y = @planet_row0 }
+				maxWidth = @planet_text_max_width
+				maxHeight = @planet_text_max_height
+				Orientation = "UPPER_LEFT"
+				text_color_code = "E"
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "TYPE_HEADER_06"
+				font = "malgun_goth_24"
+				text = "climate_gas"
+				position = { x = @planet_col1 y = @horizontal_level_text }
+				maxWidth = @planet_text_max_width_horizontal
+				maxHeight = @planet_text_max_height
+				Orientation = "UPPER_LEFT"
+				text_color_code = "E"
+				format = center
+			}
+
+
+			@planet_type_container_width = 72
+			@planet_type_container_height = 205
+			@planet_type_container_horizontal_width = 72
+			@planet_type_container_horizontal_height = 72
+			@container_pos_x1 = 290
+			@container_pos_x2 = 365
+			@container_pos_x3 = 440
+			@container_pos_x4 = 515
+			@container_pos_x5 = 590
+			@container_pos_x6 = 365
+			@container_pos_y = 59
+			@container_pos_y6 = 274
+
+			containerWindowType = {
+				name = "setting_bg_box1"
+				size = { width = @planet_type_container_width height = @planet_type_container_height }
+				position = { x = @container_pos_x1 y = @container_pos_y }
+
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_clean_frame_area"
+					}
+			}
+
+			containerWindowType = {
+				name = "setting_bg_box2"
+				size = { width = @planet_type_container_width height = @planet_type_container_height }
+				position = { x = @container_pos_x2 y = @container_pos_y }
+
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_clean_frame_area"
+					}
+			}
+
+			containerWindowType = {
+				name = "setting_bg_box3"
+				size = { width = @planet_type_container_width height = @planet_type_container_height }
+				position = { x = @container_pos_x3 y = @container_pos_y }
+
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_clean_frame_area"
+					}
+			}
+
+			containerWindowType = {
+				name = "setting_bg_box4"
+				size = { width = @planet_type_container_width height = @planet_type_container_height }
+				position = { x = @container_pos_x4 y = @container_pos_y }
+
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_clean_frame_area"
+					}
+			}
+
+			containerWindowType = {
+				name = "setting_bg_box5"
+				size = { width = @planet_type_container_width height = @planet_type_container_height }
+				position = { x = @container_pos_x5 y = @container_pos_y }
+
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_clean_frame_area"
+					}
+			}
+
+			containerWindowType = {
+				name = "setting_bg_box6"
+				size = { width = @planet_type_container_horizontal_width height = @planet_type_container_horizontal_height }
+				position = { x = @container_pos_x6 y = @container_pos_y6 }
+
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_clean_frame_area"
+					}
+			}
+
 			buttonType = {
-				name = "pc_continental"
-				position = { x = @continental_x y = @continental_y }
+				name = "pc_desert"
+				position = { x = @planet_col1 y = @planet_row1 }
 				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"
@@ -1378,15 +1514,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "pc_ocean"
-				position = { x = @ocean_x y = @ocean_y }
-				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
-				size = { x = @planet_preference_size y = @planet_preference_size }
-				clicksound = "interface"
-			}
-
-			buttonType = {
-				name = "pc_tropical"
-				position = { x = @tropical_x y = @tropical_y }
+				position = { x = @planet_col2 y = @planet_row1 }
 				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"
@@ -1394,15 +1522,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "pc_arctic"
-				position = { x = @arctic_x y = @arctic_y }
-				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
-				size = { x = @planet_preference_size y = @planet_preference_size }
-				clicksound = "interface"
-			}
-
-			buttonType = {
-				name = "pc_desert"
-				position = { x = @desert_x y = @desert_y }
+				position = { x = @planet_col3 y = @planet_row1 }
 				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"
@@ -1410,7 +1530,39 @@ guiTypes = {
 
 			buttonType = {
 				name = "pc_arid"
-				position = { x = @arid_x y = @arid_y }
+				position = { x = @planet_col1 y = @planet_row2 }
+				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_continental"
+				position = { x = @planet_col2 y = @planet_row2 }
+				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_alpine"
+				position = { x = @planet_col3 y = @planet_row2 }
+				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_savannah"
+				position = { x = @planet_col1 y = @planet_row3 }
+				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_tropical"
+				position = { x = @planet_col2 y = @planet_row3 }
 				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"
@@ -1418,48 +1570,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "pc_tundra"
-				position = { x = @tundra_x y = @tundra_y }
-				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
-				size = { x = @planet_preference_size y = @planet_preference_size }
-				clicksound = "interface"
-			}
-
-			#Added
-			buttonType = {
-				name = "pc_gas_giant"
-				position = { x = @gas_giant_x y = @gas_giant_y }
-				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
-				size = { x = @planet_preference_size y = @planet_preference_size }
-				clicksound = "interface"
-			}
-
-			buttonType = {
-				name = "pc_barren"
-				position = { x = @barren_x y = @barren_y }
-				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
-				size = { x = @planet_preference_size y = @planet_preference_size }
-				clicksound = "interface"
-			}
-
-			buttonType = {
-				name = "pc_barren_cold"
-				position = { x = @barren_cold_x y = @barren_cold_y }
-				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
-				size = { x = @planet_preference_size y = @planet_preference_size }
-				clicksound = "interface"
-			}
-
-			buttonType = {
-				name = "pc_molten"
-				position = { x = @molten_x y = @molten_y }
-				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
-				size = { x = @planet_preference_size y = @planet_preference_size }
-				clicksound = "interface"
-			}
-
-			buttonType = {
-				name = "pc_frozen"
-				position = { x = @frozen_x y = @frozen_y }
+				position = { x = @planet_col3 y = @planet_row3 }
 				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"
@@ -1467,7 +1578,15 @@ guiTypes = {
 
 			buttonType = {
 				name = "pc_toxic"
-				position = { x = @toxic_x y = @toxic_y }
+				position = { x = @planet_col4 y = @planet_row1 }
+				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_frozen"
+				position = { x = @planet_col5 y = @planet_row1 }
 				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"
@@ -1475,7 +1594,39 @@ guiTypes = {
 
 			buttonType = {
 				name = "pc_nuked"
-				position = { x = @nuked_x y = @nuked_y }
+				position = { x = @planet_col4 y = @planet_row2 }
+				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_barren_cold"
+				position = { x = @planet_col5 y = @planet_row2 }
+				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_molten"
+				position = { x = @planet_col4 y = @planet_row3 }
+				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_barren"
+				position = { x = @planet_col5 y = @planet_row3 }
+				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_gas_giant"
+				position = { x = @planet_col2 y = @horizontal_level }
 				spriteType = "GFX_dummy_3d_species_customization_planet_class_entry"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"
@@ -1485,7 +1636,7 @@ guiTypes = {
 				#This window will be moved to whatever button has the currently selected planet class
 				name = "selected"
 				position = { x = 520 y = 40 }
-				size = { width = @planet_preference_size height = @planet_preference_size }
+				size = { width = 110 height = 110 }
 
 				background = {
 					name = "selected_bg"
@@ -1507,7 +1658,7 @@ guiTypes = {
 		### details
 		containerWindowType = {
 			name = "details"
-			size = { width = 300 height = 252 }
+			size = { width = 300 height = 260 }
 			position = { x = 720 y = 48 }
 
 			background = {
@@ -1520,7 +1671,7 @@ guiTypes = {
 				font = "malgun_goth_24"
 				position = { x = 10 y = 5 }
 				maxWidth = 230
-				text =	 "CONTINENTAL"
+				text =	 ""
 				format = left
 				alwaysTransparent = yes
 				#text_color_code = "E"
@@ -1529,9 +1680,9 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "desc"
 				font = "cg_16b"
-				position = { x = 10 y = 40 }
-				maxWidth = 280
-				text =	 "Text describing the planet class you have currently chosen. Lorem ipsum dolar sit amet, Lorem ipsum dolar sit amet, Lorem ipsum dolar sit amet, Lorem ipsum dolar sit amet"
+				position = { x = 9 y = 40 }
+				maxWidth = 290
+				text = ""
 				format = left
 				#§galwaysTransparent = yes
 				text_color_code = "L"
@@ -1541,8 +1692,8 @@ guiTypes = {
 				name = "preference_trait"
 				orientation = lower_left
 				origo = lower_left
-				size = { width = 280 height = 30 }
-				position = { x = 10 y = -8 }
+				size = { width = 290 height = 50 }
+				position = { x = 10 y = -3 }
 
 				background = {
 					name = "preference_trait_hitbox"
@@ -1561,7 +1712,7 @@ guiTypes = {
 					font = "malgun_goth_24"
 					position = { x = 35 y = 1 }
 					maxWidth = 230
-					text =	 "Resilient"
+					text =	 ""
 					format = left
 					alwaysTransparent = yes
 				}
@@ -1845,7 +1996,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "ethic_points_left"
-				position = { x = -70 y = 94 }
+				position = { x = -85 y = 70 }
 				font = "malgun_goth_24"
 				maxWidth = 220
 				maxHeight = 20
@@ -1855,92 +2006,83 @@ guiTypes = {
 				#alwaysTransparent = yes
 			}
 
-			
-			
-			
+
+
 	        ####Traditions####
-			
-			
+
+
+#			buttonType = {
+#				name = "ethic_energy"
+#				spriteType = "GFX_ethic_energy"
+#				position = { x = 140 y = 124 }
+#				clicksound = interface
+#			}
+
+
 			buttonType = {
-				name = "ethic_energy"
-				spriteType = "GFX_ethic_energy"
-				position = { x = 140 y = 238 }
-				clicksound = interface
-			}				
-			
-			buttonType = {
-				name = "ethic_recycling"
-				spriteType = "GFX_ethic_recycling"
-				position = { x = 140 y = 124 }
-				clicksound = interface
-			}				
-		
-			
-			buttonType = {
-				name = "ethic_mining"
-				spriteType = "GFX_ethic_mining"
-				position = { x = 88 y = 165 }
+				name = "ethic_space_engineering"
+				spriteType = "GFX_ethic_space_engineering"
+				position = { x = 100 y = 165 }
 				clicksound = interface
 			}
-			
+
 			buttonType = {
-				name = "ethic_robotization"
-				spriteType = "GFX_ethic_robotization"
-				position = { x = 108 y = 139 }
+				name = "ethic_education"
+				spriteType = "GFX_ethic_education"
+				position = { x = 123 y = 140 }
 				clicksound = interface
 			}
-			
-			buttonType = {
-				name = "ethic_exploration"
-				spriteType = "GFX_ethic_exploration"
-				position = { x = 172 y = 139 }
-				clicksound = interface
-			}	
-			
-			buttonType = {
-				name = "ethic_biotech"
-				spriteType = "GFX_ethic_biotech"
-				position = { x = 192 y = 165 }
-				clicksound = interface
-			}			
 
 			buttonType = {
-				name = "ethic_bureaucracy"
-				spriteType = "GFX_ethic_bureaucracy"
-				position = { x = 172 y = 225 }
+				name = "ethic_transport"
+				spriteType = "GFX_ethic_transport"
+				position = { x = 157 y = 140 }
 				clicksound = interface
-			}	
-			
-			buttonType = {
-				name = "ethic_milind"
-				spriteType = "GFX_ethic_milind"
-				position = { x = 192 y = 197 }
-				clicksound = interface
-			}		
+			}
 
 			buttonType = {
-				name = "ethic_expansion"
-				spriteType = "GFX_ethic_expansion"
-				position = { x = 108 y = 225 }
+				name = "ethic_medicine"
+				spriteType = "GFX_ethic_medicine"
+				position = { x = 180 y = 165 }
 				clicksound = interface
-			}		
+			}
 
 			buttonType = {
-				name = "ethic_agri"
-				spriteType = "GFX_ethic_agri"
-				position = { x = 88 y = 197 }
+				name = "ethic_comms"
+				spriteType = "GFX_ethic_comms"
+				position = { x = 157 y = 223 }
 				clicksound = interface
-			}				
+			}
 
-			
-			
-		
+			buttonType = {
+				name = "ethic_culture"
+				spriteType = "GFX_ethic_culture"
+				position = { x = 180 y = 197 }
+				clicksound = interface
+			}
+
+			buttonType = {
+				name = "ethic_hospitality"
+				spriteType = "GFX_ethic_hospitality"
+				position = { x = 123 y = 223 }
+				clicksound = interface
+			}
+
+			buttonType = {
+				name = "ethic_land_engineering"
+				spriteType = "GFX_ethic_land_engineering"
+				position = { x = 100 y = 197 }
+				clicksound = interface
+			}
+
+
+
 
 			### NON-FANATIC ETHICS ###
 
 		####mod ethic rebuild####
-		#########################	
-		
+		#########################
+
 			buttonType = {
 				name = "ethic_pluralist"
 				spriteType = "GFX_ethic_pluralist"
@@ -1951,11 +2093,11 @@ guiTypes = {
 			buttonType = {
 				name = "ethic_elitist"
 				spriteType = "GFX_ethic_elitist"
-				position = { x = 156 y = 266 }			
+				position = { x = 156 y = 266 }
 				clicksound = interface
 			}
 
-		
+
 
 		    buttonType = {
 				name = "ethic_capitalism"
@@ -1963,15 +2105,15 @@ guiTypes = {
 				position = { x = 224 y = 165 }
 				clicksound = interface
 			}
-			
-			
+
+
 			buttonType = {
 				name = "ethic_socialism"
 				spriteType = "GFX_ethic_socialism"
 				position = { x = 56 y = 197 }
 				clicksound = interface
 			}
-			
+
 
 			buttonType = {
 				name = "ethic_isolationist"
@@ -1979,9 +2121,9 @@ guiTypes = {
 				position = { x = 124 y = 266 }
 				clicksound = interface
 			}
-			
 
-			
+
+
 			buttonType = {
 				name = "ethic_expansionist"
 				spriteType = "GFX_ethic_expansionist"
@@ -1995,7 +2137,7 @@ guiTypes = {
 				position = { x = 95 y = 111 }
 				clicksound = interface
 			}
-			
+
 
 			buttonType = {
 				name = "ethic_industrial"
@@ -2003,23 +2145,23 @@ guiTypes = {
 				position = { x = 185 y = 254 }
 				clicksound = interface
 			}
-			
-		
-			
+
+
+
 			buttonType = {
 				name = "ethic_individualist"
 				spriteType = "GFX_ethics_individualist"
 				position = { x = 224 y = 197 }
 				clicksound = interface
 			}
-			
+
 			buttonType = {
 				name = "ethic_xenophobe"
 				spriteType = "GFX_ethics_xenophobe"
 				position = { x = 208 y = 133 }
 				clicksound = interface
 			}
-			
+
 			buttonType = {
 				name = "ethic_militarist"
 				spriteType = "GFX_ethics_militarist"
@@ -2049,7 +2191,7 @@ guiTypes = {
 			}
 
 			buttonType = {
-				
+
 				name = "ethic_pacifist"
 				spriteType = "GFX_ethics_pacifist"
 				position = { x = 95 y = 254 }
@@ -2078,57 +2220,57 @@ guiTypes = {
 				spriteType = "GFX_ethic_fanatic_pluralist"
 				position = { x = 117 y = 65 }
 				clicksound = interface
-			}			
-			
+			}
+
 			buttonType = {
 				name = "ethic_fanatic_capitalism"
 				spriteType = "GFX_ethic_fanatic_capitalism"
-				position = { x = 256 y = 161 }				
+				position = { x = 256 y = 161 }
 				clicksound = interface
 			}
-			
+
 			 buttonType = {
 				name = "ethic_fanatic_socialism"
 				spriteType = "GFX_ethic_fanatic_socialism"
 				position = { x = 24 y = 201 }
 				clicksound = interface
 			}
-			
+
             buttonType = {
 				name = "ethic_fanatic_industrial"
 				spriteType = "GFX_ethic_fanatic_industrial"
 				position = { x = 205 y = 280 }
 				clicksound = interface
-			}		
+			}
 
             buttonType = {
 				name = "ethic_fanatic_green"
 				spriteType = "GFX_ethic_fanatic_green"
 				position = { x = 79 y = 82 }
 				clicksound = interface
-			}					
-			
+			}
+
 			buttonType = {
 				name = "ethic_fanatic_isolationist"
 				spriteType = "GFX_ethic_fanatic_isolationist"
-				position = { x = 117 y = 298 }								
+				position = { x = 117 y = 298 }
 				clicksound = interface
 			}
-			
+
             buttonType = {
 				name = "ethic_fanatic_expansionist"
 				spriteType = "GFX_ethic_fanatic_expansionist"
-				position = { x = 164 y = 65 }				
+				position = { x = 164 y = 65 }
 				clicksound = interface
 			}
-			
+
 			buttonType = {
 				name = "ethic_fanatic_individualist"
 				spriteType = "GFX_ethics_fanatic_individualist"
 				position = { x = 256 y = 201 }
 				clicksound = interface
 			}
-			
+
 			buttonType = {
 				name = "ethic_fanatic_xenophobe"
 				spriteType = "GFX_ethics_fanatic_xenophobe"
@@ -2177,7 +2319,7 @@ guiTypes = {
 				position = { x = 48 y = 113 }
 				clicksound = interface
 			}
-			
+
 
 
 
@@ -2203,7 +2345,7 @@ guiTypes = {
 				name = "ethic_spi_selected"
 				spriteType = "GFX_ethic_selected"
 			}
-			
+
 			iconType = {
 				name = "ethic_soc_selected"
 				spriteType = "GFX_ethic_selected"
@@ -2213,7 +2355,7 @@ guiTypes = {
 				name = "ethic_grn_selected"
 				spriteType = "GFX_ethic_selected"
 			}
-			
+
 			iconType = {
 				name = "ethic_exp_selected"
 				spriteType = "GFX_ethic_selected"
@@ -2222,72 +2364,62 @@ guiTypes = {
 			iconType = {
 				name = "ethic_elt_selected"
 				spriteType = "GFX_ethic_selected"
-			}	
+			}
 
 			iconType = {
-				name = "ethic_socen_selected"
+				name = "ethic_cons_selected"
 				spriteType = "GFX_ethic_selected"
 			}
 
 			iconType = {
-				name = "ethic_res_selected"
+				name = "ethic_engi_selected"
 				spriteType = "GFX_ethic_selected"
 			}
 
 			iconType = {
-				name = "ethic_bureau_selected"
+				name = "ethic_edu_selected"
 				spriteType = "GFX_ethic_selected"
 			}
 
 			iconType = {
-				name = "ethic_rob_selected"
+				name = "ethic_tra_selected"
 				spriteType = "GFX_ethic_selected"
 			}
 
 			iconType = {
-				name = "ethic_expan_selected"
+				name = "ethic_med_selected"
 				spriteType = "GFX_ethic_selected"
 			}
 
 			iconType = {
-				name = "ethic_explor_selected"
+				name = "ethic_comm_selected"
 				spriteType = "GFX_ethic_selected"
 			}
 
-			iconType = {
-				name = "ethic_min_selected"
-				spriteType = "GFX_ethic_selected"
-			}
-
-			iconType = {
-				name = "ethic_agri_selected"
-				spriteType = "GFX_ethic_selected"
-			}
-
-			iconType = {
-				name = "ethic_bio_selected"
-				spriteType = "GFX_ethic_selected"
-			}
-
-			iconType = {
-				name = "ethic_milind_selected"
-				spriteType = "GFX_ethic_selected"
-			}	
-			
 			iconType = {
 				name = "ethic_ene_selected"
 				spriteType = "GFX_ethic_selected"
-			}			
+			}
 
-			
-			
+			iconType = {
+				name = "ethic_hos_selected"
+				spriteType = "GFX_ethic_selected"
+			}
+
+			iconType = {
+				name = "ethic_cul_selected"
+				spriteType = "GFX_ethic_selected"
+			}
+
+
+
 
 		}
 
 		smoothListboxType = {
 			name = "ethic_description_list"
 			position = { x = 266 y = 50 }
-			size = { x = 224 y = 280 }
+			size = { x = 224 y = 275 }
 			scrollbarType = "standardlistbox_slider"
 			orientation = "UPPER_LEFT"
 			#autohide_scrollbar = no
@@ -2301,7 +2433,6 @@ guiTypes = {
 			max_slots_horizontal = 6
 			format = UPPER_LEFT
 			position = { x = 472 y = 5 }
-			scrollbarType = "standardlistbox_slider"
 			add_horizontal = yes
 		}
 
@@ -2374,12 +2505,12 @@ guiTypes = {
 	### ethic desc entry
 	containerWindowType = {
 		name = "ethic_description_entry"
-		size = { width = 200 height = 265 }
+		size = { width = 200 height = 325 }
 
 		buttonType = {
 			name = "background"
 			spriteType = "GFX_tiles_dark_area_cut_8"
-			size = { x = 210 y = 260 }
+			size = { x = 210 y = 320 }
 		}
 
 		iconType = {
@@ -2419,7 +2550,7 @@ guiTypes = {
 			font = "cg_16b"
 			position = { x = 10 y = 40 }
 			maxWidth = 190
-			text =	""
+			text =	 "Text describing the ethic you have currently chosen. Lorem ipsum dolar sit amet, Lorem ipsum dolar sit amet, Lorem ipsum dolar sit amet, Lorem ipsum dolar sit amet"
 			format = left
 			alwaysTransparent = yes
 			text_color_code = "L"
@@ -2447,6 +2578,7 @@ guiTypes = {
 			clicksound = interface
 		}
 	}
+
 
 	#######################
 	# empire flag
