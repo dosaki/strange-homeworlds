@@ -7,4 +7,4 @@ tags={
 }
 picture="strangehomeworlds.jpg"
 remote_file_id="716723174"
-supported_version="1.3.*"
+supported_version="1.4.*"
