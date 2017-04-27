@@ -1,0 +1,7 @@
+﻿l_braz_por:
+  tech_art_biosphere:0 "Biosferas Fechadas"
+  tech_art_biosphere_desc:1 "Criando biosferas em ambientes hermeticamente fechados em planetas inóspitos a vida orgânica pode habitar lugares que apenas poderiam ser colonizados por robôs."
+  tech_floating_cities:0 "Cidades Flutuantes"
+  tech_floating_cities_desc:0 "Permite-nos colocar equipamento flutuante em plataformas, criando cidades que flutuam em gases espessos."
+  TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_TITLE:0 "Cidades Flutuantes"
+  TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_DESC:0 "Permite-nos colonizar gigantes gasosos ao contruir cidades na sua atmosfera."

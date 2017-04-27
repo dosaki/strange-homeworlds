@@ -1,0 +1,7 @@
+﻿l_braz_por:
+  climate_gas:0 "Gasoso"
+  climate_inhospitable:0 "Inóspito"
+  climate_harsh:0 "Rigoroso"
+  gas:0 "§M(Gasoso)§!"
+  inhospitable:0 "§H(Clima Inóspito)§!"
+  harsh:0 "§R(Clima Rigoroso)§!"

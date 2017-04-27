@@ -1,0 +1,7 @@
+﻿l_german:
+  tech_art_biosphere:0 "Geschlossene Biosphäres"
+  tech_art_biosphere_desc:1 "Durch das Aufbauen von geschlossenen Biosphäresauf unbewohnbaren Planeten ermöglichen wir es Organikern dort zu leben und Operationen auszuführen die sonst nur mit Robotern möglich wären."
+  tech_floating_cities:0 "Schwebende Städte"
+  tech_floating_cities_desc:0 "Durch das Verbinden von Schwebegeräten an Platformen, können ganze Städte auf dichten Gasen schweben."
+  TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_TITLE:0 "Schwebende Städte "
+  TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_DESC:0 "Erlaubt es uns Gasriesen zu kolonisieren indem wir schwebende Städte bauen."

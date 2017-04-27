@@ -1,0 +1,7 @@
+﻿l_german:
+  climate_gas:0 "Gasförmig"
+  climate_inhospitable:0 "Ungastlich"
+  climate_harsh:0 "Hart"
+  gas:0 "§M(Gas)§!"
+  inhospitable:0 "§H(Ungastlich Klima)§!"
+  harsh:0 "§R(Hartes Klima)§!"
