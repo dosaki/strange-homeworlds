@@ -1466,12 +1466,13 @@ guiTypes = {
 			@planet_row3 = 197
 			@horizontal_level = 278
 			@horizontal_level_text = 293
-			@planet_col1 = 294
-			@planet_col2 = 369
-			@planet_col3 = 444
-			@planet_col4 = 519
-			@planet_col5 = 594
-			@planet_text_max_width = 60
+			@planet_col1 = 280
+			@planet_col2 = 355
+			@planet_col3 = 430
+			@planet_col4 = 505
+			@planet_col5 = 580
+			@planet_col6 = 655
+			@planet_text_max_width = 65
 			@planet_text_max_height = 20
 			@planet_text_max_width_horizontal = 65
 			@planet_preference_size = 60
@@ -1539,9 +1540,9 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "TYPE_HEADER_06"
 				font = "malgun_goth_24"
-				text = "climate_gas"
-				position = { x = @planet_col1 y = @horizontal_level_text }
-				maxWidth = @planet_text_max_width_horizontal
+				text = "climate_artificial"
+				position = { x = @planet_col6 y = @planet_row0 }
+				maxWidth = @planet_text_max_width
 				maxHeight = @planet_text_max_height
 				Orientation = "UPPER_LEFT"
 				text_color_code = "E"
@@ -1551,8 +1552,8 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "TYPE_HEADER_07"
 				font = "malgun_goth_24"
-				text = "climate_artificial"
-				position = { x = @planet_col3 y = @horizontal_level_text }
+				text = "climate_gas"
+				position = { x = @planet_col1 y = @horizontal_level_text }
 				maxWidth = @planet_text_max_width_horizontal
 				maxHeight = @planet_text_max_height
 				Orientation = "UPPER_LEFT"
@@ -1564,11 +1565,12 @@ guiTypes = {
 			@planet_type_container_height = 205
 			@planet_type_container_horizontal_width = 72
 			@planet_type_container_horizontal_height = 72
-			@container_pos_x1 = 290
-			@container_pos_x2 = 365
-			@container_pos_x3 = 440
-			@container_pos_x4 = 515
-			@container_pos_x5 = 590
+			@container_pos_x1 = 275
+			@container_pos_x2 = 350
+			@container_pos_x3 = 425
+			@container_pos_x4 = 500
+			@container_pos_x5 = 575
+			@container_pos_x6 = 650
 			@container_pos_y = 59
 			@container_pos_y2 = 274
 
@@ -1629,8 +1631,8 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "setting_bg_box6"
-				size = { width = @planet_type_container_horizontal_width height = @planet_type_container_horizontal_height }
-				position = { x = @container_pos_x2 y = @container_pos_y2 }
+				size = { width = @planet_type_container_width height = @planet_type_container_height }
+				position = { x = @container_pos_x6 y = @container_pos_y }
 
 					background = {
 						name = "setting_bg_frame"
@@ -1641,7 +1643,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "setting_bg_box7"
 				size = { width = @planet_type_container_horizontal_width height = @planet_type_container_horizontal_height }
-				position = { x = @container_pos_x4 y = @container_pos_y2 }
+				position = { x = @container_pos_x2 y = @container_pos_y2 }
 
 					background = {
 						name = "setting_bg_frame"
@@ -1770,16 +1772,32 @@ guiTypes = {
 			}
 
 			buttonType = {
-				name = "pc_gas_giant"
-				position = { x = @planet_col2 y = @horizontal_level }
+				name = "pc_habitat"
+				position = { x = @planet_col6 y = @planet_row1 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"
 			}
 
 			buttonType = {
-				name = "pc_habitat"
-				position = { x = @planet_col4 y = @horizontal_level }
+				name = "pc_ai"
+				position = { x = @planet_col6 y = @planet_row2 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_shielded"
+				position = { x = @planet_col6 y = @planet_row3 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @planet_preference_size y = @planet_preference_size }
+				clicksound = "interface"
+			}
+
+			buttonType = {
+				name = "pc_gas_giant"
+				position = { x = @planet_col2 y = @horizontal_level }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"
@@ -1811,8 +1829,8 @@ guiTypes = {
 		### details
 		containerWindowType = {
 			name = "details"
-			size = { width = 300 height = 260 }
-			position = { x = 720 y = 48 }
+			size = { width = 250 height = 260 }
+			position = { x = 770 y = 48 }
 
 			background = {
 				name = "bg"
@@ -1823,7 +1841,7 @@ guiTypes = {
 				name = "name"
 				font = "malgun_goth_24"
 				position = { x = 10 y = 5 }
-				maxWidth = 230
+				maxWidth = 200
 				text =	 ""
 				format = left
 				alwaysTransparent = yes
@@ -1834,7 +1852,7 @@ guiTypes = {
 				name = "desc"
 				font = "cg_16b"
 				position = { x = 9 y = 40 }
-				maxWidth = 290
+				maxWidth = 230
 				text = ""
 				format = left
 				#�galwaysTransparent = yes

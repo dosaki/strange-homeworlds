@@ -205,6 +205,10 @@ trait_pc_ai_preference = {
 	modification = no
 	modifier = {
 		pc_ai_habitability = 1.0
+		pc_habitat_preference = 1.0
+		pc_shielded_preference = 1.0
+		pc_ringworld_habitable_habitability = 1.0
+
 		pc_desert_habitability = 0.01
 		pc_tropical_habitability = 0.01
 		pc_continental_habitability = 0.01
@@ -257,12 +261,28 @@ trait_pc_ringworld_habitable_preference = {
 	modification = no
 	modifier = {
 		pc_ringworld_habitable_habitability = 1.0
+		pc_ai_habitability = 1.0
+		pc_habitat_preference = 1.0
+		pc_shielded_preference = 1.0
 	}
 }
 trait_pc_habitat_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
 	modification = no
 	modifier = {
-		pc_habitat_habitability = 1.0
+		pc_ai_habitability = 1.0
+		pc_habitat_preference = 1.0
+		pc_shielded_preference = 1.0
+		pc_ringworld_habitable_habitability = 1.0
 	}
+
+	trait_pc_shielded_preference = {
+		icon = "gfx/interface/icons/traits/trait_pc_shielded_preference.dds"
+		modification = no
+		modifier = {
+			pc_ai_habitability = 1.0
+			pc_habitat_preference = 1.0
+			pc_shielded_preference = 1.0
+			pc_ringworld_habitable_habitability = 1.0
+		}
 }

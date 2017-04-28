@@ -1,8 +1,9 @@
 ﻿l_english:
   climate_artificial:0 "Artificial"
   climate_gas:0 "Gaseous"
-  climate_inhospitable:0 "Inhospitable"
+  climate_inhospitable:0 "Bleak"
   climate_harsh:0 "Harsh"
   gas:0 "§M(Gas)§!"
-  inhospitable:0 "§H(Inhospitable Climate)§!"
+  inhospitable:0 "§H(Bleak Climate)§!"
   harsh:0 "§R(Harsh Climate)§!"
+  artificial:0 "§M(Artificial Climate)§!"

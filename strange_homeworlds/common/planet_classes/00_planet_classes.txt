@@ -555,6 +555,8 @@ pc_shielded = {
 	entity = "shielded_planet"
 	icon_frame = 1
 
+	climate = "artificial"
+
 	entity_scale = @planet_standard_scale
 
 	atmosphere_color 		= hsv { 0.25 0.9 0.8 }		#DONE
@@ -584,6 +586,9 @@ pc_shielded = {
 pc_ai = {
 	entity = "ai_planet"
 	entity_scale = @planet_standard_scale
+
+  climate = "artificial"
+
 	icon_frame = 15
 	tile_set = pc_tundra
 
@@ -1033,6 +1038,9 @@ pc_habitat = {
 	entity = "orbital_habitat"
 	outliner_planet_type = special
 	icon_frame = 22
+
+  climate = "artificial"
+
 	entity_scale = 1.0
 	enable_tilt = no
 	fixed_entity_scale = yes
