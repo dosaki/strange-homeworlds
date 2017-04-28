@@ -1,4 +1,4 @@
-name="Strange Homeworlds"
+name="Strange Homeworlds (Standalone)"
 path="mod/strange_homeworlds"
 tags={
 	"Gameplay"
