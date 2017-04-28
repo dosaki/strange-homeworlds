@@ -54,7 +54,7 @@
 pc_desert = {
 	entity = "desert_planet"
 	icon_frame = 1
-	
+
 	climate = "dry"
 
 	entity_scale = @planet_standard_scale
@@ -1051,7 +1051,7 @@ pc_habitat = {
 	ideal = yes
 	starting_planet = no
 	orbit_lines = no
-	can_support_spaceport = no
+	can_support_spaceport = yes
 }
 
 pc_shrouded = {
@@ -1062,15 +1062,15 @@ pc_shrouded = {
 	atmosphere_color 		= hsv { 0.0 0.9 0.45	}		#DONE
 	atmosphere_intensity 	= 0.5
 	atmosphere_width 		= 1.5
-	
+
 	spawn_odds = 0
-	
+
 	extra_orbit_size = 0
 	extra_planet_count = 0
-	
+
 	planet_size = { min = 10 max = 25 }
 	moon_size = { min = 6 max = 10 }
-	
+
 	colonizable = no
 }
 
@@ -1142,4 +1142,3 @@ random_list = {
 		"pc_gaia"
 	}
 }
-				

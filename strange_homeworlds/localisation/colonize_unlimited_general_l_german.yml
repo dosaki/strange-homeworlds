@@ -1,4 +1,5 @@
 ﻿l_german:
+  climate_artificial:0 "Künstlich"
   climate_gas:0 "Gasförmig"
   climate_inhospitable:0 "Ungastlich"
   climate_harsh:0 "Hart"

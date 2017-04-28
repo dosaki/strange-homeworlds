@@ -1548,6 +1548,17 @@ guiTypes = {
 				format = center
 			}
 
+			instantTextBoxType = {
+				name = "TYPE_HEADER_07"
+				font = "malgun_goth_24"
+				text = "climate_artificial"
+				position = { x = @planet_col3 y = @horizontal_level_text }
+				maxWidth = @planet_text_max_width_horizontal
+				maxHeight = @planet_text_max_height
+				Orientation = "UPPER_LEFT"
+				text_color_code = "E"
+				format = center
+			}
 
 			@planet_type_container_width = 72
 			@planet_type_container_height = 205
@@ -1558,9 +1569,8 @@ guiTypes = {
 			@container_pos_x3 = 440
 			@container_pos_x4 = 515
 			@container_pos_x5 = 590
-			@container_pos_x6 = 365
 			@container_pos_y = 59
-			@container_pos_y6 = 274
+			@container_pos_y2 = 274
 
 			containerWindowType = {
 				name = "setting_bg_box1"
@@ -1620,7 +1630,18 @@ guiTypes = {
 			containerWindowType = {
 				name = "setting_bg_box6"
 				size = { width = @planet_type_container_horizontal_width height = @planet_type_container_horizontal_height }
-				position = { x = @container_pos_x6 y = @container_pos_y6 }
+				position = { x = @container_pos_x2 y = @container_pos_y2 }
+
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_clean_frame_area"
+					}
+			}
+
+			containerWindowType = {
+				name = "setting_bg_box7"
+				size = { width = @planet_type_container_horizontal_width height = @planet_type_container_horizontal_height }
+				position = { x = @container_pos_x4 y = @container_pos_y2 }
 
 					background = {
 						name = "setting_bg_frame"
@@ -1758,7 +1779,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "pc_habitat"
-				position = { x = @planet_col2 y = @horizontal_level }
+				position = { x = @planet_col4 y = @horizontal_level }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @planet_preference_size y = @planet_preference_size }
 				clicksound = "interface"

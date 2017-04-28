@@ -1,4 +1,5 @@
 ﻿l_braz_por:
+  climate_artificial:0 "Artificial"
   climate_gas:0 "Gasoso"
   climate_inhospitable:0 "Inóspito"
   climate_harsh:0 "Rigoroso"
