@@ -361,9 +361,10 @@ pc_asteroid = {
 	extra_orbit_size = 0
 	extra_planet_count = 0
 
+	can_be_moon = yes
 	chance_of_ring = 0
 
-	planet_size = 5
+	planet_size = { min = 3 max = 7 }
 
 	colonizable = yes
 	survey_time_factor = 0.5
