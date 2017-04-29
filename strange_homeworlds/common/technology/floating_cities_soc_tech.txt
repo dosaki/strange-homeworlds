@@ -5,8 +5,8 @@ tech_floating_cities = {
 	area = society
 	tier = 3
 	category = { new_worlds }
-	prerequisites = { "tech_colonization_1" }
 	weight = 200
+	is_rare = yes
 
 	#Floating Cities
 	#Allows us to colonize Gas Giants by building floating cities.

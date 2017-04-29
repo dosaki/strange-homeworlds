@@ -1,0 +1,63 @@
+@tier2cost1 = 900
+@tier2weight1 = 75
+
+tech_hollow_asteroids = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { new_worlds }
+	weight = @tier2weight1
+	is_rare = yes
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+
+tech_planet_modernization = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { new_worlds }
+	weight = @tier2weight1
+	is_rare = yes
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}

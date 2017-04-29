@@ -352,6 +352,8 @@ pc_asteroid = {
 	entity_scale = 1.5
 	icon_frame = 18
 
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"
+
 	asteroid = yes
 
 	spawn_odds = 10
@@ -363,8 +365,9 @@ pc_asteroid = {
 
 	planet_size = 5
 
-	colonizable = no
+	colonizable = yes
 	survey_time_factor = 0.5
+	colonization_tech = { "tech_hollow_asteroids" }
 }
 
 pc_molten = {

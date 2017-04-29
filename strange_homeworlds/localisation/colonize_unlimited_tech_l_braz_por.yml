@@ -5,3 +5,5 @@
   tech_floating_cities_desc:0 "Permite-nos colocar equipamento flutuante em plataformas, criando cidades que flutuam em gases espessos."
   TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_TITLE:0 "Cidades Flutuantes"
   TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_DESC:0 "Permite-nos colonizar gigantes gasosos ao contruir cidades na sua atmosfera."
+  tech_hollow_asteroids:0 "Escavação de Asteróides"
+  tech_floating_cities_desc:0 "Permite habitar o interior de asteróides ao esvaziar o seu interior e criando rotação para simular gravidade."
