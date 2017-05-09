@@ -27,6 +27,12 @@ tb_mountain_range = {
 			}
 		}
 		modifier = {
+			add = 20
+			planet = {
+				is_planet_class = pc_alpine
+			}
+		}			
+		modifier = {
 			add = 13.5
 			planet = {
 				is_colonizable = yes
@@ -151,18 +157,6 @@ tb_dangerous_wildlife = {
 					has_modifier = "titanic_life"
 				}
 		}
-		modifier = {
-				factor = 0
-				planet = {
-					OR = {
-						is_planet_class = pc_barren
-						is_planet_class = pc_toxic
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_frozen
-						is_planet_class = pc_molten
-					}
-				}
-		}
 	}
 
 	prerequisites = { "tech_tb_dangerous_wildlife" }
@@ -235,6 +229,12 @@ tb_quicksand_basin = {
 			add = 36
 			planet = {
 				is_planet_class = pc_desert
+			}
+		}
+		modifier = {
+			add = 20
+			planet = {
+				is_planet_class = pc_savannah
 			}
 		}
 		modifier = {
@@ -400,6 +400,12 @@ tb_deep_sinkhole = {
 		modifier = {
 			add = 18
 			planet = {
+				is_planet_class = pc_savannah
+			}
+		}	
+		modifier = {
+			add = 18
+			planet = {
 				is_planet_class = pc_desert
 			}
 		}
@@ -417,6 +423,13 @@ tb_deep_sinkhole = {
 ### SPECIAL
 
 tb_radioactive_wasteland = {
+	time = 200
+	cost = {
+		energy = 200
+		minerals = 200
+	}
+
+
 	spawn_chance = {
 		modifier = {
 			add = 30
@@ -425,17 +438,13 @@ tb_radioactive_wasteland = {
 			}
 		}
 	}
-
-	adjacency_bonus = {
-		resource_physics_research_add = 1
-	}
 }
 
 tb_city_ruins = {
-	time = 100
+	time = 200
 	cost = {
-		energy = 50
-		minerals = 50
+		energy = 200
+		minerals = 200
 	}
 
 	spawn_chance = {
@@ -445,10 +454,6 @@ tb_city_ruins = {
 				is_planet_class = pc_nuked
 			}
 		}
-	}
-
-	adjacency_bonus = {
-		resource_society_research_add = 1
 	}
 }
 
@@ -519,7 +524,7 @@ tb_tribal_settlement = {
 	}
 
 	adjacency_bonus = {
-		resource_society_research_add = 1
+		tile_building_resource_society_research_add = 1
 	}
 }
 
@@ -547,7 +552,7 @@ tb_wandering_forest_reserve = {
 	}
 
 	adjacency_bonus = {
-		resource_society_research_add = 3
+		tile_building_resource_society_research_add = 3
 	}
 }
 
@@ -640,6 +645,19 @@ tb_bombarded_land = {
 		energy = 75
 		minerals = 75
 	}
+	
+	spawn_chance = {
+		modifier = {
+			add = 0
+		}
+	}
+}
+
+tb_xeno_preserve = {
+
+	# Can't be removed
+	cost = { 
+	}
 
 	spawn_chance = {
 		modifier = {
@@ -648,28 +666,16 @@ tb_bombarded_land = {
 	}
 }
 
-﻿tb_xeno_preserve = {
-	﻿# Can't be removed
-	﻿cost = {
-	﻿}
-	﻿
-	﻿spawn_chance = {
-		﻿modifier = {
-			﻿add = 0
-		﻿}
-	﻿}
-﻿}
-﻿
-﻿tb_ancient_ruins = {
-	﻿time = 180
-	﻿cost = {
-		﻿energy = 150
-		﻿minerals = 150
-	﻿}
-	﻿
-	﻿spawn_chance = {
-		﻿modifier = {
-		﻿	add = 0
-		﻿}
-	﻿}
+tb_ancient_ruins = {
+	time = 180
+	cost = {
+		energy = 150
+		minerals = 150
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 0
+		}
+	}
 }

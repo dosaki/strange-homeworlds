@@ -19,7 +19,18 @@ random_empire_init_01 = {
 	asteroids_distance = 50
 
 	usage = empire_init
+	
+	flags = { empire_home_system }
 
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
 	planet = {
 		count = 1
 		class = star
@@ -73,13 +84,18 @@ random_empire_init_01 = {
 				limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
 				set_building = "building_capital_1"
 				add_resource = {
-					resource = food
+					resource = energy
 					amount = 1
 					replace = yes
-				}
-				add_resource = {
-					resource = minerals
-					amount = 1
+				}					
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_hydroponics_farm_1"
+					add_resource = {
+						resource = food
+						amount = 2
+						replace = yes
+					}						
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -101,32 +117,41 @@ random_empire_init_01 = {
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
-					set_building = "building_power_plant_1"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
 					set_building = "building_mining_network_1"
 					add_resource = {
 						resource = minerals
-						amount = 1
+						amount = 2
 						replace = yes
 					}
 				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
-				set_building = "building_hydroponics_farm_1"
-				add_resource = {
-					resource = food
-					amount = 1
-					replace = yes
-				}
-			}
+				set_building = "building_basic_science_lab_1"
+				random_list = {
+					33 = { 
+						add_resource = {
+							resource = engineering_research
+							amount = 1
+							replace = yes
+						}						
+					}
+					33 = { 
+						add_resource = {
+							resource = physics_research
+							amount = 1
+							replace = yes
+						}						
+					}
+					33 = { 
+						add_resource = {
+							resource = society_research
+							amount = 1
+							replace = yes
+						}						
+					}					
+				}					
+			}	
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
 				set_building = "building_mining_network_1"
@@ -205,7 +230,7 @@ random_empire_init_01 = {
 
 		moon = {
 			count = { min = 0 max = 1 }
-			class = pc_barren_cold
+			class = random_non_colonizable
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
 		}
@@ -214,7 +239,7 @@ random_empire_init_01 = {
 	planet = {
 		count = { min = 2 max = 4 }
 		orbit_distance = 20
-		class = pc_barren_cold
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 
 		change_orbit = @base_moon_distance
@@ -259,7 +284,18 @@ random_empire_init_02 = {
 	asteroids_distance = 115
 
 	usage = empire_init
+	
+	flags = { empire_home_system }
 
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+		
 	planet = {
 		count = 1
 		class = star
@@ -290,13 +326,18 @@ random_empire_init_02 = {
 				limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
 				set_building = "building_capital_1"
 				add_resource = {
-					resource = food
+					resource = energy
 					amount = 1
 					replace = yes
-				}
-				add_resource = {
-					resource = minerals
-					amount = 1
+				}					
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_hydroponics_farm_1"
+					add_resource = {
+						resource = food
+						amount = 2
+						replace = yes
+					}
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -305,7 +346,7 @@ random_empire_init_02 = {
 						resource = food
 						amount = 1
 						replace = yes
-					}
+					}						
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -314,35 +355,44 @@ random_empire_init_02 = {
 						resource = energy
 						amount = 1
 						replace = yes
-					}
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_power_plant_1"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}
+					}						
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
 					set_building = "building_mining_network_1"
 					add_resource = {
 						resource = minerals
-						amount = 1
+						amount = 2
 						replace = yes
 					}
 				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
-				set_building = "building_hydroponics_farm_1"
-				add_resource = {
-					resource = food
-					amount = 1
-					replace = yes
-				}
+				set_building = "building_basic_science_lab_1"
+				random_list = {
+					33 = { 
+						add_resource = {
+							resource = engineering_research
+							amount = 1
+							replace = yes
+						}						
+					}
+					33 = { 
+						add_resource = {
+							resource = physics_research
+							amount = 1
+							replace = yes
+						}						
+					}
+					33 = { 
+						add_resource = {
+							resource = society_research
+							amount = 1
+							replace = yes
+						}						
+					}					
+				}					
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
@@ -412,7 +462,7 @@ random_empire_init_02 = {
 				set_building = "building_power_plant_1"
 				add_resource = {
 					resource = energy
-					amount = 1
+					amount = 2
 					replace = yes
 				}
 			}
@@ -431,7 +481,7 @@ random_empire_init_02 = {
 	planet = {
 		count = 2
 		orbit_distance = 20
-		class = pc_molten
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		change_orbit = @base_moon_distance
 
@@ -455,7 +505,7 @@ random_empire_init_02 = {
 	planet = {
 		count = { min = 2 max = 4 }
 		orbit_distance = 25
-		class = pc_barren
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 
 		change_orbit = @base_moon_distance
@@ -487,7 +537,7 @@ random_empire_init_02 = {
 	planet = {
 		count = { min = 0 max = 2 }
 		orbit_distance = 20
-		class = pc_frozen
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
 
@@ -507,7 +557,18 @@ random_empire_init_03 = {
 	asteroids_distance = 85
 
 	usage = empire_init
+	
+	flags = { empire_home_system }
 
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+		
 	planet = {
 		count = 1
 		class = star
@@ -522,7 +583,7 @@ random_empire_init_03 = {
 	planet = {
 		count = 1
 		orbit_distance = 20
-		class = pc_molten
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		change_orbit = @base_moon_distance
 
@@ -546,7 +607,7 @@ random_empire_init_03 = {
 	planet = {
 		count = 1
 		orbit_distance = 25
-		class = pc_barren_cold
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 		change_orbit = @base_moon_distance
 
@@ -593,13 +654,18 @@ random_empire_init_03 = {
 					limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
 					set_building = "building_capital_1"
 					add_resource = {
-						resource = food
+						resource = energy
 						amount = 1
 						replace = yes
-					}
-					add_resource = {
-						resource = minerals
-						amount = 1
+					}						
+					random_neighboring_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_building = "building_hydroponics_farm_1"
+						add_resource = {
+							resource = food
+							amount = 2
+							replace = yes
+						}
 					}
 					random_neighboring_tile = {
 						limit = { has_blocker = no has_building = no }
@@ -621,31 +687,40 @@ random_empire_init_03 = {
 					}
 					random_neighboring_tile = {
 						limit = { has_blocker = no has_building = no }
-						set_building = "building_power_plant_1"
-						add_resource = {
-							resource = energy
-							amount = 1
-							replace = yes
-						}
-					}
-					random_neighboring_tile = {
-						limit = { has_blocker = no has_building = no }
 						set_building = "building_mining_network_1"
 						add_resource = {
 							resource = minerals
-							amount = 1
+							amount = 2
 							replace = yes
 						}
 					}
 				}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
-					set_building = "building_hydroponics_farm_1"
-					add_resource = {
-						resource = food
-						amount = 1
-						replace = yes
-					}
+					set_building = "building_basic_science_lab_1"
+					random_list = {
+						33 = { 
+							add_resource = {
+								resource = engineering_research
+								amount = 1
+								replace = yes
+							}						
+						}
+						33 = { 
+							add_resource = {
+								resource = physics_research
+								amount = 1
+								replace = yes
+							}						
+						}
+						33 = { 
+							add_resource = {
+								resource = society_research
+								amount = 1
+								replace = yes
+							}						
+						}					
+					}					
 				}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -715,7 +790,7 @@ random_empire_init_03 = {
 					set_building = "building_power_plant_1"
 					add_resource = {
 						resource = energy
-						amount = 1
+						amount = 2
 						replace = yes
 					}
 				}
@@ -726,7 +801,7 @@ random_empire_init_03 = {
 	planet = {
 		count = { min = 1 max = 3 }
 		orbit_distance = 25
-		class = pc_frozen
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
 
@@ -749,7 +824,7 @@ random_empire_init_03 = {
 	planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = 20
-		class = pc_frozen
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
 
@@ -768,7 +843,18 @@ random_empire_init_04 = {
 	class = "rl_standard_stars"
 
 	usage = empire_init
+	
+	flags = { empire_home_system }
 
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+		
 	planet = {
 		count = 1
 		class = star
@@ -783,7 +869,7 @@ random_empire_init_04 = {
 	planet = {
 		count = { min = 1 max = 3 }
 		orbit_distance = 15
-		class = pc_molten
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
 
@@ -806,13 +892,18 @@ random_empire_init_04 = {
 				limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
 				set_building = "building_capital_1"
 				add_resource = {
-					resource = food
+					resource = energy
 					amount = 1
 					replace = yes
-				}
-				add_resource = {
-					resource = minerals
-					amount = 1
+				}					
+				random_neighboring_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_hydroponics_farm_1"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -834,31 +925,40 @@ random_empire_init_04 = {
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
-					set_building = "building_power_plant_1"
-					add_resource = {
-						resource = energy
-						amount = 1
-						replace = yes
-					}
-				}
-				random_neighboring_tile = {
-					limit = { has_blocker = no has_building = no }
 					set_building = "building_mining_network_1"
 					add_resource = {
 						resource = minerals
-						amount = 1
+						amount = 2
 						replace = yes
 					}
 				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
-				set_building = "building_hydroponics_farm_1"
-				add_resource = {
-					resource = food
-					amount = 1
-					replace = yes
-				}
+				set_building = "building_basic_science_lab_1"
+				random_list = {
+					33 = { 
+						add_resource = {
+							resource = engineering_research
+							amount = 1
+							replace = yes
+						}						
+					}
+					33 = { 
+						add_resource = {
+							resource = physics_research
+							amount = 1
+							replace = yes
+						}						
+					}
+					33 = { 
+						add_resource = {
+							resource = society_research
+							amount = 1
+							replace = yes
+						}						
+					}					
+				}					
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
@@ -928,7 +1028,7 @@ random_empire_init_04 = {
 				set_building = "building_power_plant_1"
 				add_resource = {
 					resource = energy
-					amount = 1
+					amount = 2
 					replace = yes
 				}
 			}
@@ -938,7 +1038,7 @@ random_empire_init_04 = {
 
 		moon = {
 			count = { min = 0 max = 1 }
-			class = pc_barren
+			class = random_non_colonizable
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
 		}
@@ -947,7 +1047,7 @@ random_empire_init_04 = {
 	planet = {
 		count = { min = 1 max = 3 }
 		orbit_distance = 25
-		class = pc_barren_cold
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
 
@@ -961,7 +1061,7 @@ random_empire_init_04 = {
 
 		moon = {
 			count = { min = 1 max = 3 }
-			class = pc_barren_cold
+			class = random_non_colonizable
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
 		}
@@ -970,7 +1070,7 @@ random_empire_init_04 = {
 	planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = 20
-		class = pc_barren
+		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
 
@@ -989,6 +1089,15 @@ random_empire_init_04 = {
 # Neighbor Tier 1
 neighbor_t1 = {
 	class = "rl_standard_stars"
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
 
 	planet = {
 		count = 1
@@ -1024,8 +1133,17 @@ neighbor_t1 = {
 }
 
 # Neighbor Tier 1 First Colony
-neighbor_t1_first_colony = {
+neighbor_t1_first_colony = {	
 	class = "rl_standard_stars"
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
 
 	planet = {
 		count = 1
@@ -1108,7 +1226,7 @@ neighbor_t1_first_colony = {
 	}
 
 	neighbor_system = {
-		distance = { min = 10 max = @distance }
+		distance = { min = 10 max = @distance }	
 		initializer = "neighbor_t2"
 	}
 }
@@ -1117,6 +1235,15 @@ neighbor_t1_first_colony = {
 neighbor_t2 = {
 	class = "rl_standard_stars"
 	asteroids_distance = 70
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
 
 	planet = {
 		count = 1
@@ -1157,6 +1284,15 @@ neighbor_t2 = {
 # Neighbor Tier 2 Second Colony
 neighbor_t2_second_colony = {
 	class = "rl_standard_stars"
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
 
 	planet = {
 		count = 1

@@ -129,3 +129,14 @@ trait_pc_frozen_preference = {
 	    pc_nuked_habitability = @tertiary
 	}
 }
+
+trait_pc_shielded_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_shielded_preference.dds"
+	modification = no
+	modifier = {
+		pc_ai_habitability = 1.0
+		pc_habitat_preference = 1.0
+		pc_shielded_preference = 1.0
+		pc_ringworld_habitable_habitability = 1.0
+	}
+}
