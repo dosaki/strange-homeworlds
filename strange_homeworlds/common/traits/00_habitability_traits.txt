@@ -262,8 +262,8 @@ trait_pc_ringworld_habitable_preference = {
 	modifier = {
 		pc_ringworld_habitable_habitability = 1.0
 		pc_ai_habitability = 1.0
-		pc_habitat_preference = 1.0
-		pc_shielded_preference = 1.0
+		pc_habitat_habitability = 1.0
+		pc_shielded_habitability = 1.0
 	}
 }
 trait_pc_habitat_preference = {
@@ -271,7 +271,7 @@ trait_pc_habitat_preference = {
 	modification = no
 	modifier = {
 		pc_ai_habitability = 1.0
-		pc_habitat_preference = 1.0
-		pc_shielded_preference = 1.0
+		pc_habitat_habitability = 1.0
+		pc_shielded_habitability = 1.0
 		pc_ringworld_habitable_habitability = 1.0
 	}

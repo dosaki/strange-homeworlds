@@ -135,8 +135,18 @@ trait_pc_shielded_preference = {
 	modification = no
 	modifier = {
 		pc_ai_habitability = 1.0
-		pc_habitat_preference = 1.0
-		pc_shielded_preference = 1.0
+		pc_habitat_habitability = 1.0
+		pc_shielded_habitability = 1.0
 		pc_ringworld_habitable_habitability = 1.0
+	}
+}
+
+trait_pc_asteroid_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_asteroid_preference.dds"
+	modification = no
+	modifier = {
+		pc_asteroid_habitability = @primary
+		pc_barren_habitability = @tertiary
+		pc_barren_cold_habitability = @tertiary
 	}
 }

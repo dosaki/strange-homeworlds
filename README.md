@@ -13,6 +13,9 @@ Ability to start out with the following world types (in addition to the usual on
 * Frozen
 * Gas Giant
 * Tomb World
+* AI World
+* Space Habitats
+* Shielded World
 
 # Habitability Relationships
 ![Habitability Relationships](https://github.com/dosaki/strange-homeworlds/blob/master/habitability_links.png)

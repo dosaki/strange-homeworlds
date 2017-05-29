@@ -7,3 +7,7 @@
   tech_planet_modernization_desc:0 "Pave the planet! Replace all organics with metal."
   TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_TITLE:0 "Planet Modernization"
   TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_DESC:0 "Allows us to terraform planets into artificial worlds."
+  tech_planet_life_restoration:0 "Life Restoration"
+  tech_planet_life_restoration_desc:0 "Out with all unnatural! Life will always find a way."
+  TECH_UNLOCK_PLANET_LIFE_RESTORATION_TITLE:0 "Life Restoration"
+  TECH_UNLOCK_PLANET_LIFE_RESTORATION_DESC:0 "Disassemble artificial components and restore life to the planet."

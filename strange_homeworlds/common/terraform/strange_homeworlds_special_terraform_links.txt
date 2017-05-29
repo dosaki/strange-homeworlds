@@ -10,7 +10,7 @@ terraform_link = {
 	duration = 14600
 
 	condition = {
-		has_technology = "tech_planet_modernization"
+		has_technology = "tech_planet_life_restoration"
 	}
 }
 
@@ -22,7 +22,7 @@ terraform_link = {
 	duration = 14600
 
 	condition = {
-		has_technology = "tech_planet_modernization"
+		has_technology = "tech_planet_life_restoration"
 	}
 }
 
@@ -34,7 +34,7 @@ terraform_link = {
 	duration = 14600
 
 	condition = {
-		has_technology = "tech_planet_modernization"
+		has_technology = "tech_planet_life_restoration"
 	}
 }
 
@@ -46,7 +46,7 @@ terraform_link = {
 	duration = 14600
 
 	condition = {
-		has_technology = "tech_planet_modernization"
+		has_technology = "tech_planet_life_restoration"
 	}
 }
 
@@ -58,7 +58,7 @@ terraform_link = {
 	duration = 14600
 
 	condition = {
-		has_technology = "tech_planet_modernization"
+		has_technology = "tech_planet_life_restoration"
 	}
 }
 
@@ -70,7 +70,7 @@ terraform_link = {
 	duration = 14600
 
 	condition = {
-		has_technology = "tech_planet_modernization"
+		has_technology = "tech_planet_life_restoration"
 	}
 }
 
@@ -82,7 +82,7 @@ terraform_link = {
 	duration = 14600
 
 	condition = {
-		has_technology = "tech_planet_modernization"
+		has_technology = "tech_planet_life_restoration"
 	}
 }
 
@@ -94,7 +94,7 @@ terraform_link = {
 	duration = 14600
 
 	condition = {
-		has_technology = "tech_planet_modernization"
+		has_technology = "tech_planet_life_restoration"
 	}
 }
 
@@ -106,7 +106,7 @@ terraform_link = {
 	duration = 14600
 
 	condition = {
-		has_technology = "tech_planet_modernization"
+		has_technology = "tech_planet_life_restoration"
 	}
 }
 
@@ -118,7 +118,7 @@ terraform_link = {
 	duration = 14600
 
 	condition = {
-		has_technology = "tech_planet_modernization"
+		has_technology = "tech_planet_life_restoration"
 	}
 }
 

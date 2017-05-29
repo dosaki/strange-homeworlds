@@ -7,3 +7,7 @@
   tech_planet_modernization_desc:0 "Pavimentem o planeta! Troquem tudo o que seja organico por metal."
   TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_TITLE:0 "Modernização Planetária"
   TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_DESC:0 "Pavimentem o planeta! Troquem tudo o que seja organico por metal."
+  tech_planet_life_restoration:0 "Restauração da Vida"
+  tech_planet_life_restoration_desc:0 "Fora com tudo o que não é natural! A vida prevalecerá!"
+  TECH_UNLOCK_PLANET_LIFE_RESTORATION_TITLE:0 "Restauração da Vida"
+  TECH_UNLOCK_PLANET_LIFE_RESTORATION_DESC:0 "Desmontem o artificial e re-estabeleçam os elementos para a vida."
