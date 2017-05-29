@@ -9,5 +9,5 @@
   pc_frozen_tile_desc: "Terrain begraben unter einer dicken Eisschicht mit kaum einer Atmosphäre."
   pc_molten_tile: "Geschmolzenes Terrain"
   pc_molten_tile_desc: "Halbgeschmolzenes Lavaterrain mit einer sehr dünnen Atmosphäre."
-  pc_gas_giant_tile:0 "Gasriesen Atmosphäre"
-  pc_gas_giant_tile_desc:0 "Mixture dicker Gase. Leben exestiert hier sogut wie nie." 
+  pc_gas_giant_tile: "Gasriesen Atmosphäre"
+  pc_gas_giant_tile_desc: "Mixture dicker Gase. Leben exestiert hier sogut wie nie." 

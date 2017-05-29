@@ -9,5 +9,5 @@
   pc_frozen_tile_desc: "Terrain buried under a thick layer of ice with barely any atmosphere above that."
   pc_molten_tile: "Molten Terrain"
   pc_molten_tile_desc: "Half-molten lava terrain with a very thin atmosphere above it."
-  pc_gas_giant_tile:0 "Gas Giant Atmosphere"
-  pc_gas_giant_tile_desc:0 "Mixture of thick gases. Life is almost always inexistant."
+  pc_gas_giant_tile: "Gas Giant Atmosphere"
+  pc_gas_giant_tile_desc: "Mixture of thick gases. Life is almost always inexistant."

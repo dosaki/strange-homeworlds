@@ -9,5 +9,5 @@
   pc_frozen_tile_desc: "Terreno coberto por uma camada espessa de gelo com uma atmosfera quase inexistente."
   pc_molten_tile: "Terreno derretido"
   pc_molten_tile_desc: "Lava quase derretida com uma fina atmosfera."
-  pc_gas_giant_tile:0 "Atmosfera Gasosa"
-  pc_gas_giant_tile_desc:0 "Uma mistura espessa de gases. A vida é inexistente ou rara."
+  pc_gas_giant_tile: "Atmosfera Gasosa"
+  pc_gas_giant_tile_desc: "Uma mistura espessa de gases. A vida é inexistente ou rara."
