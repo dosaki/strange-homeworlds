@@ -1,0 +1,9 @@
+﻿﻿l_english:
+  tech_hollow_asteroids:0 "Hollowing of Asteroids"
+  tech_hollow_asteroids_desc:0 "Enables habitability in asteroids by hollowing it's interior and creating rotation to simulate gravity."
+  TECH_UNLOCK_HOLLOW_ASTEROIDS_CHANGE_TITLE:0 "Hollowing of Asteroids"
+  TECH_UNLOCK_HOLLOW_ASTEROIDS_CHANGE_DESC:0 "Enables habitability in asteroids by hollowing it's interior and creating rotation to simulate gravity."
+  tech_planet_modernization:0 "Planet Modernization"
+  tech_planet_modernization_desc:0 "Pave the planet! Replace all organics with metal."
+  TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_TITLE:0 "Planet Modernization"
+  TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_DESC:0 "Allows us to terraform planets into artificial worlds."

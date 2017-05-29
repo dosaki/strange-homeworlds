@@ -9,6 +9,13 @@ tech_hollow_asteroids = {
 	weight = @tier2weight1
 	is_rare = yes
 
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_HOLLOW_ASTEROIDS_CHANGE_TITLE"
+			desc = "TECH_UNLOCK_HOLLOW_ASTEROIDS_CHANGE_DESC"
+		}
+	}
+
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -39,6 +46,13 @@ tech_planet_modernization = {
 	category = { new_worlds }
 	weight = @tier2weight1
 	is_rare = yes
+
+	prereqfor_desc = {
+		diplo_action = {
+			title = "TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_TITLE"
+			desc = "TECH_UNLOCK_PLANET_MODERNIZATION_CHANGE_DESC"
+		}
+	}
 
 	weight_modifier = {
 		modifier = {
