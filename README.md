@@ -15,7 +15,7 @@ Ability to start out with the following world types (in addition to the usual on
 * Gas Giant
 * Tomb World
 * AI World
-* Space Habitats
+* Space Habitats (also allows all Space Habitats to have their own Spaceport)
 * Shielded World
 
 # Habitability Relationships
