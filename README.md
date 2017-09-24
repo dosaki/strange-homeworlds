@@ -1,7 +1,7 @@
 # What is Strange Homeworlds
 
 Strange Homeworlds is a standalone mod that is designed to let you start with previously uninhabitable planets.
-It spun off from [Colonize Unlimited©](https://steamcommunity.com/sharedfiles/filedetails/?id=682582076) (which is no longer kept updated)1.
+It spun off from [Colonize Unlimited©](https://steamcommunity.com/sharedfiles/filedetails/?id=682582076) (which is no longer kept updated).
 
 Get it on Steam Workshop: http://steamcommunity.com/sharedfiles/filedetails/?id=716723174
 
@@ -15,7 +15,7 @@ Ability to start out with the following world types (in addition to the usual on
 * Gas Giant
 * Tomb World
 * AI World
-* Space Habitats
+* Space Habitats (also allows all Space Habitats to have their own Spaceport)
 * Shielded World
 
 # Habitability Relationships
