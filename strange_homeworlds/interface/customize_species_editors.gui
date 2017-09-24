@@ -2062,8 +2062,8 @@ guiTypes = {
 		### details
 		containerWindowType = {
 			name = "details"
-			size = { width = 300 height = 260 }
-			position = { x = 720 y = 48 }
+			size = { width = 250 height = 260 }
+			position = { x = 770 y = 48 }
 
 			background = {
 				name = "bg"
@@ -2074,7 +2074,7 @@ guiTypes = {
 				name = "name"
 				font = "malgun_goth_24"
 				position = { x = 10 y = 5 }
-				maxWidth = 230
+				maxWidth = 200
 				text =	 ""
 				format = left
 				alwaysTransparent = yes
@@ -2085,7 +2085,7 @@ guiTypes = {
 				name = "desc"
 				font = "cg_16b"
 				position = { x = 9 y = 40 }
-				maxWidth = 290
+				maxWidth = 293
 				text = ""
 				format = left
 				#galwaysTransparent = yes
@@ -2500,7 +2500,7 @@ guiTypes = {
 				name = "ethic_spi_selected"
 				spriteType = "GFX_ethic_selected"
 			}
-			
+
 			iconType = {
 				name = "ethic_hive_selected"
 				spriteType = "GFX_ethic_selected"
