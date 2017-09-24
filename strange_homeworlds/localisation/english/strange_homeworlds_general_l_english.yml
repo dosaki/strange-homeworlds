@@ -9,3 +9,6 @@
   harsh:0 "§R(Harsh Climate)§!"
   artificial:0 "§M(Artificial)§!"
   other:0 "(Other)"
+  pc_barren_cold:0 "Cold Barren World"
+  pc_barren_cold_desc:0 "Cold, barren and rocky world with a thin or non-existent atmosphere. The surface is covered in meteor impact craters and seemingly devoid of life."
+  pc_barren_desc:0 "Barren and rocky world with a thin or non-existent atmosphere. The surface is covered in meteor impact craters and seemingly devoid of life."
