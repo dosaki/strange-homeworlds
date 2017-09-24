@@ -7,4 +7,4 @@ tags={
 	"Fixes"
 }
 remote_file_id="756813222"
-supported_version="1.8.*"
+supported_version="1.4.*"
