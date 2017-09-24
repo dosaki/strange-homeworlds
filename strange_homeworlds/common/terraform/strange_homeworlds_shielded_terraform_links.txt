@@ -183,7 +183,7 @@ terraform_link = {
 }
 
 terraform_link = {
-  from = "pc_ai"
+  from = "pc_mechanical"
 	to = "pc_shielded"
 
 	energy = 20000

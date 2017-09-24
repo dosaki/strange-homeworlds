@@ -330,6 +330,12 @@ tb_massive_glacier = {
 			}
 		}
 		modifier = {
+			add = 35
+			planet = {
+				is_planet_class = pc_alpine
+			}
+		}		
+		modifier = {
 				factor = 0.25
 				planet = {
 					has_modifier = "titanic_life"
@@ -671,6 +677,113 @@ tb_ancient_ruins = {
 	cost = {
 		energy = 150
 		minerals = 150
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 0
+		}
+	}
+}
+
+tb_ancient_cryo_chambers = {
+	picture = tb_ancient_ruins
+	time = 180
+	cost = {
+		energy = 150
+		minerals = 150
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 0
+		}
+	}
+}
+
+# Starting Blockers on Machine Empire worlds
+
+tb_exterminators_ruins = {
+	picture = tb_city_ruins
+	time = 120
+	cost = {
+		energy = 60
+		minerals = 60
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 0
+		}
+	}
+}
+
+tb_former_battlefield = {
+	picture = tb_radioactive_wasteland
+	time = 90
+	cost = {
+		energy = 40
+		minerals = 40
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 0
+		}
+	}
+}
+
+tb_strip_mine = {
+	picture = tb_crater
+	time = 90
+	cost = {
+		energy = 40
+		minerals = 40
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 0
+		}
+	}
+}
+
+tb_unsupervised_settlement = {
+	picture = tb_slums
+	time = 90
+	cost = {
+		energy = 40
+		minerals = 40
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 0
+		}
+	}
+}
+
+tb_collapsed_burrows = {
+	picture = tb_deep_sinkhole
+	time = 90
+	cost = {
+		energy = 40
+		minerals = 40
+	}
+
+	spawn_chance = {
+		modifier = {
+			add = 0
+		}
+	}
+}
+
+tb_assimilators_ruins = {
+	picture = tb_city_ruins
+	time = 120
+	cost = {
+		energy = 60
+		minerals = 60
 	}
 
 	spawn_chance = {

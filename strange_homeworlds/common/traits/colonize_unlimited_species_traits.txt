@@ -135,6 +135,7 @@ trait_pc_shielded_preference = {
 	modification = no
 	modifier = {
 		pc_ai_habitability = 1.0
+		pc_machine_habitability = 1.0
 		pc_habitat_habitability = 1.0
 		pc_shielded_habitability = 1.0
 		pc_ringworld_habitable_habitability = 1.0
